@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 
 Project("{4F1EDD70-B025-78E6-D301-BFA2827A83E2}") = "CatGame", "Assembly-CSharp-firstpass.csproj", "{34D325A6-1B56-B896-95F2-A5EEC80F55F7}"
 EndProject
+Project("{4F1EDD70-B025-78E6-D301-BFA2827A83E2}") = "CatGame", "Assembly-CSharp.csproj", "{420E2909-60B5-15E0-853E-B574F3A99299}"
+EndProject
 Project("{4F1EDD70-B025-78E6-D301-BFA2827A83E2}") = "CatGame", "Assembly-CSharp-Editor-firstpass.csproj", "{C8850F33-828F-5B3A-B8E6-4B22EB2B785F}"
 EndProject
 Project("{4F1EDD70-B025-78E6-D301-BFA2827A83E2}") = "CatGame", "Assembly-UnityScript-firstpass.unityproj", "{1FEE0286-BF7E-F136-D73D-34BBF4BA0EC5}"
@@ -17,6 +19,10 @@ Global
 		{34D325A6-1B56-B896-95F2-A5EEC80F55F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34D325A6-1B56-B896-95F2-A5EEC80F55F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34D325A6-1B56-B896-95F2-A5EEC80F55F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{420E2909-60B5-15E0-853E-B574F3A99299}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{420E2909-60B5-15E0-853E-B574F3A99299}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{420E2909-60B5-15E0-853E-B574F3A99299}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{420E2909-60B5-15E0-853E-B574F3A99299}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C8850F33-828F-5B3A-B8E6-4B22EB2B785F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C8850F33-828F-5B3A-B8E6-4B22EB2B785F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8850F33-828F-5B3A-B8E6-4B22EB2B785F}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -29,7 +35,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-											GlobalSection(MonoDevelopProperties) = preSolution
+																										GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
