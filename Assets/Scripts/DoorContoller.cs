@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class DoorContoller : MonoBehaviour {
 	
 	public static KeyCode INTERACT_BTN = PlayerController.INTERACT_BTN;
+	public Text keyCountText;
 
 	// Use this for initialization
 	void Start () {	
@@ -13,6 +15,12 @@ public class DoorContoller : MonoBehaviour {
 	void Update () {
 	}
 	
+	void OnCollisionEnter (Collision collision) {		
+		if (collision.gameObject.CompareTag ("Player")) {
+			keyCountText.text = "Click X to Interact";
+		}
+	}
+
 	void OnCollisionStay (Collision collision) {
 		//collide with player and player interacts with
 		if (collision.gameObject.CompareTag("Player")) 
@@ -23,9 +31,10 @@ public class DoorContoller : MonoBehaviour {
 					PlayerController.keyCount--;
 					Destroy(this.gameObject);
 				} else {
-					Debug.Log("You need a key!");
+					keyCountText.text = "You need a key!";
 				}
 			}
 		}
 	}
+
 }

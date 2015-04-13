@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class PlayerController : MonoBehaviour {
@@ -8,6 +9,7 @@ public class PlayerController : MonoBehaviour {
 	public static KeyCode INTERACT_BTN = KeyCode.X;
 	public static bool isDead = false;
 
+
 	// Use this for initialization
 	void Start () {
 	
@@ -15,7 +17,9 @@ public class PlayerController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+		if (isDead) {
+
+		}
 	}
 		
 	void OnCollisionEnter (Collision collision){

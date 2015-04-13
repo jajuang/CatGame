@@ -1,7 +1,10 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class WorldController : MonoBehaviour {
+	
+	public Text keyCountText;
 
 	// Use this for initialization
 	void Start () {
@@ -15,13 +18,12 @@ public class WorldController : MonoBehaviour {
 		}
 	}
 	
-	void showScore(){
-		Rect textArea = new Rect (0,0,Screen.width,Screen.height);
-		GUI.Label (textArea, "KeyCount: "+ PlayerController.keyCount );
+	void keyCount(){
+		keyCountText.text = "x "+ PlayerController.keyCount.ToString();
 	}
 		
 	//GUI text
 	void OnGUI(){
-		showScore ();
+		keyCount ();
 	}
 }
